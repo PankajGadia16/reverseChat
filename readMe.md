@@ -29,13 +29,13 @@ Features included:
 
 	- POST /api/user/signin
 		req: {
-			username: <STRING>, 
-			password: <STRING>
+			username: STRING, 
+			password: STRING
 		}
 		res: {
-			success: <BOOL>,
-			error: <STRING> (if success == false)
-			user: <USER OBJECT> (if success == true) 
+			success: BOOL,
+			error: STRING (if success == false)
+			user: USER OBJECT (if success == true) 
 			}
 
 	- POST /api/user/signup
@@ -43,28 +43,28 @@ Features included:
 
 	- POST /api/chat/
 		req: {
-			userId: <STRING>,
-			message: <STRING>
+			userId: STRING,
+			message: STRING
 		}
 		res: {
-			success : <BOOL>
+			success : BOOL
 		}
 
 	- GET /api/chat/
 		res: {
-			success: <BOOL>,
+			success: BOOL,
 			chat: [{
-				message: <STRING>,
-				username: <STRING>
+				message: STRING,
+				username: STRING
 			}]
 		}
 
 	- GET /api/chat/count
 		res: {
-			success: <BOOL>,
+			success: BOOL,
 			countData: [{
-				count: <NUMBER>
-				username: <STRING>
+				count: NUMBER
+				username: STRING
 			}]
 		}
 
