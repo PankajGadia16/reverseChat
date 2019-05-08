@@ -69,3 +69,8 @@ Features included:
 			}]
 		}
 
+Steps to run: 
+- Clone this repo
+- install all dependencies using npm i
+- cd backend && node server.js
+- cd frontend/client && npm start
