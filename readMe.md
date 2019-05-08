@@ -11,47 +11,48 @@ Features included:
 	- all messages (with reverse message from bot) and utilty to send message on Chatbox tab. 
 
 - Instead of Google or facebook login - added own login/signup module.
-- Was Unable to add:
-	- socket.io
-	- bootstrap for UI
+- Was Unable to:
+	- use socket.io
+	- use bootstrap for UI
+    - host it live
 
 
 
 - Schemas: 
 	- User
-		username
-		password
+		- username
+		- password
 	- Chat
-		userId
-		message
+		- userId
+		- message
 
 - APIs:
 
 	- POST /api/user/signin
-		req: {
+		- req: {
 			username: STRING, 
 			password: STRING
 		}
-		res: {
+		- res: {
 			success: BOOL,
 			error: STRING (if success == false)
 			user: USER OBJECT (if success == true) 
 			}
 
 	- POST /api/user/signup
-		req and res is same as of above api
+		- req and res is same as of above api
 
 	- POST /api/chat/
-		req: {
+		- req: {
 			userId: STRING,
 			message: STRING
 		}
-		res: {
+		- res: {
 			success : BOOL
 		}
 
 	- GET /api/chat/
-		res: {
+		- res: {
 			success: BOOL,
 			chat: [{
 				message: STRING,
@@ -60,7 +61,7 @@ Features included:
 		}
 
 	- GET /api/chat/count
-		res: {
+		- res: {
 			success: BOOL,
 			countData: [{
 				count: NUMBER
